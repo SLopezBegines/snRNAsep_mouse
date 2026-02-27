@@ -5,6 +5,7 @@
 [![Bioconductor](https://img.shields.io/badge/Bioconductor-%E2%89%A53.18-85BB65.svg)](https://bioconductor.org/)
 [![Reproducible: renv](https://img.shields.io/badge/Reproducible-renv-forestgreen.svg)](https://rstudio.github.io/renv/)
 [![License: Academic](https://img.shields.io/badge/License-Academic%20use-blue.svg)](#license)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-8b5cf6.svg)](https://slopezbegines.github.io/projects/single-cell/)
 
 > Modular R pipeline for single-nucleus RNA-seq analysis: from 10X CellRanger output through quality control, SCTransform normalisation, clustering, differential expression, and multi-layered functional enrichment.
 
@@ -83,10 +84,8 @@ flowchart TD
 │   └── global_variables.R             # Thresholds & organism parameters
 │
 └── rmds/                              # R Markdown analysis notebooks
-    ├── Single_Cell_10X_Integrated_functions_SCT - UBC_Cre.Rmd
-    ├── Single_Cell_10X_Integrated_functions_SCT - PV_Cre.Rmd
-    ├── Clustering Association_FindAllMarkers.Rmd
-    └── ...
+    ├── Single_Cell_10X_Integrated_functions_SCT.Rmd  # Main analysis notebook
+    └── Clustering Association_FindAllMarkers.Rmd     # Cluster annotation
 ```
 
 ---
@@ -138,7 +137,7 @@ Open the appropriate RMarkdown notebook and set `data_path` to your CellRanger o
 
 ```r
 # Main analysis
-rmarkdown::render("rmds/Single_Cell_10X_Integrated_functions_SCT - UBC_Cre.Rmd")
+rmarkdown::render("rmds/Single_Cell_10X_Integrated_functions_SCT.Rmd")
 ```
 
 ### 3. Run enrichment modules independently
