@@ -1,0 +1,18 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+
+# Raw sequencing data (10X CellRanger outputs, ~70 GB)
+rawdata/
+
+# Pipeline outputs (figures, Seurat objects, tables)
+output/
+
+# renv package library (reconstruct from renv.lock)
+renv/
+
+# OS
+.DS_Store
+Thumbs.db
